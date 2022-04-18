@@ -20,7 +20,7 @@ BEGIN
 					from [Order Details] od
 					join Products p on od.ProductID = p.ProductID
 					where p.CategoryId=t.CategoryID),
-		importe = (select sum(od.Quantity*od.UnitPrice) 
+		importe = (select sum(od.Quantity*od.UnitPrice*(1-od.Discount)) 
 					from [Order Details] od
 					join Products p on od.ProductID = p.ProductID
 					where p.CategoryId=t.CategoryID)
@@ -30,12 +30,13 @@ BEGIN
 END; 
 GO
 
-
-
 select * from dbo.fn_ventas();
 go
 
-
-select sum(Quantity), sum(Quantity*UnitPrice)
+select sum(Quantity), sum(Quantity*UnitPrice*(1-Discount))
 from [Order Details];
 go
+
+select * from [Order Details];
+go
+
