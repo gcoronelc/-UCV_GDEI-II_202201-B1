@@ -19,5 +19,14 @@ begin
 end;
 go
 
+begin tran;
+go
+
+
+select @@TRANCOUNT;
+go
+
+
+
 
 

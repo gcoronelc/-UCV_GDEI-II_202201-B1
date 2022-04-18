@@ -49,6 +49,9 @@ GO
 
 
 
+select @@TRANCOUNT;
+go
+
 
 
 
