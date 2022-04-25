@@ -1,4 +1,8 @@
 
+use educa;
+go
+
+
 SELECT * FROM CURSO;
 GO
 
@@ -7,7 +11,7 @@ on CURSO
 for delete
 as
 BEGIN
-	if(select count (*) 
+	if( select count (*) 
 		from deleted D 
 		JOIN matricula M on d.cur_id = M.cur_id) > 0
 	begin
@@ -18,4 +22,7 @@ END;
 go
 
 delete from curso where cur_id=1;
+go
+
+delete from curso where cur_id=7;
 go

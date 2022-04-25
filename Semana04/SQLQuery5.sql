@@ -3,8 +3,8 @@ go
 
 
 create table SueldoLog(
-	id int not null identity,
-	fecha date not null,
+	id int not null identity Primary key,
+	fecha date not null DEFAULT CURRENT_TIMESTAMP,
 	HostName VARCHAR(64), 
 	IPAddress VARCHAR(32), 
 	ProgramName NVARCHAR(255), 
@@ -12,20 +12,21 @@ create table SueldoLog(
 	sueldo_old money null,
 	sueldo_new money null
 );
+go
 
 
 
-alter trigger tr_SueldoLog
+create trigger tr_SueldoLog
 on empleado for insert, update
 as
 begin
 	SET NOCOUNT ON; 
-	declare @ip VARCHAR(32), @sueldo_old money, @sueldo_new money;
+	declare @ip VARCHAR(32);
 	set @ip = ( SELECT client_net_address FROM sys.dm_exec_connections 
 									WHERE session_id = @@SPID ); 
-	insert into SueldoLog(fecha,HostName,IPAddress,ProgramName,LoginName,sueldo_old,sueldo_new)
+	insert into SueldoLog(HostName,IPAddress,ProgramName,LoginName,sueldo_old,sueldo_new)
 	select 
-		GETDATE(),HOST_NAME(), @ip, PROGRAM_NAME(), 
+		HOST_NAME(), @ip, PROGRAM_NAME(), 
 		SUSER_SNAME(), d.sueldo, i.sueldo
 	from inserted i left join deleted d on i.idempleado = d.idempleado
 end;
@@ -51,6 +52,9 @@ values ('E8888','AAAAAA', 'BBBBBB', '20050120', 'algo@gmail.com',
 -- EL ERROR (RETO)
 
 select * from SueldoLog;
+go
+
+select * from empleado order by 1 desc;
 go
 
 update empleado 
