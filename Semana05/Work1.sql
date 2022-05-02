@@ -1,0 +1,19 @@
+/*
+
+SELECT ..
+FROM ...
+WHERE ..
+GROUP BY ...
+HAVING ...
+ORDER BY ...
+
+
+*/
+
+SELECT ShipCountry, COUNT(1) VENTAS
+FROM Northwind..Orders
+WHERE YEAR(ORDERDATE) = 1997
+GROUP BY ShipCountry
+HAVING COUNT(1)<10
+GO
+
