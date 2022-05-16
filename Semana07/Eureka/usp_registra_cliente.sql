@@ -80,3 +80,5 @@ exec usp_registra_cliente 'VASQUEZ','VALVERDE',NULL,'12345678','Lima',
 print concat('Estado: ', @estado);
 print concat('Codigo: ', @codigo);
 go
+
+
