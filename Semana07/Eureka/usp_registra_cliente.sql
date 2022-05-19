@@ -12,7 +12,7 @@ go
  *   -1: Error en el proceso
  *   -2: Error al crear el codigo del cliente.
 */
-create procedure usp_registra_cliente
+alter procedure usp_registra_cliente
 (
 	@p_paterno    varchar (25),
 	@p_materno    varchar (25),
@@ -30,7 +30,11 @@ begin
 	-- Declaracion de variables
 	declare @contador int, @tamanio int;
 	-- Validacion
-
+	if(@p_paterno is null or @p_materno is null or @p_nombre is null)
+	begin
+		set @p_estado = -3;
+		return; -- Fin del programa
+	end;
 	-- Proceso
 	set @p_estado = 1;
 	BEGIN TRY 
@@ -66,7 +70,7 @@ go
 
 -- Prueba 1
 declare @codigo char(5), @estado int;
-exec usp_registra_cliente 'VASQUEZ','VALVERDE','CARLOS','12345678','Lima',
+exec usp_registra_cliente 'GARCIA','ROJAS','ADRIANA','76345698','Lima',
 'Los Olivos','963476892','carlos@gmail.com', @codigo out, @estado out;
 print concat('Estado: ', @estado);
 print concat('Codigo: ', @codigo);
