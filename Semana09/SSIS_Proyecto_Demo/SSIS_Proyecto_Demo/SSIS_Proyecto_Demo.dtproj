@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">EGCC2020</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm8KeguxCC0m/HnjD6Cvv2AAAAAACAAAAAAAQZgAAAAEAACAAAACJ5cHsWK4W8dSIdt6VfUdNiCPlN9tXU/mFSuRBdVVDZQAAAAAOgAAAAAIAACAAAADabJRe5ZYak5vHdbCgRsjkBnvZJfCs9Hb05nk758D38JAAAADAcvFGAi4/mi/SgZNOg4aDaV8AEF19SDgcSgmy0euotNrPbhQ78fmF1hbHiISy96Kw5wooNJGLBeTKb/5a+76rvDq+vQtnGHZiJy3oiZStI0NSktvZtRgCAckRzoKm+W76e/AjV0igyCLg+ztYkS6rhMDAyT2KdO6JnQPAzGx6LbxSioMnPZ8bpchccQ7ddzRAAAAAWrp/pAsNCO8J40q4J+2CAHV4ZQmmsy0OV82GlYq8+Kb0pnDltzhgwS9Mz4zR2wfZm9NcYHhC6LNMTeG0GNeySA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm8KeguxCC0m/HnjD6Cvv2AAAAAACAAAAAAAQZgAAAAEAACAAAADjWsJZbAt6WJZYxVshvg0/nK4jPKo+6DH7RY0SLADYZgAAAAAOgAAAAAIAACAAAAAJBbCKnqG74QYa4VfWUHqXScx67fHHuAcMqkG5xcKjjZAAAAAv/zWh1NiULykvyyDMe0S7Rp1JepDsoQairpcF1JGZKtXRNXydHZfokClOiDIF9AgHyLrdJ2MVC1Cu4Im/n834XpuiAjSt94g06r8QYtOC0ePs5jm373PqV+c7p93gaE0yL9AQoL1Ip8x2b8IZNDQdAmsMaDrQKjvSdc+7gobJnvG0RSBsqi9u1RPpiEbeF8NAAAAA6CEacU/HeoGB5T4ZJP6m7uFAGZ6Bfot45KqnSE7se/aWvbC8kylUZogBMfukXhFJbID2hh9iZLTzquLr2rAyBw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="localhost.Northwind.sa.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="localhost.BDDestino.sa.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="Datos de Territorios.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -336,6 +337,201 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.AlwaysCheckForRowDelimiters">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.CodePage">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">1252</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.ColumnNamesInFirstDataRow">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.ConnectByProxy">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana09\Ejercicio02 - Script Component\TERRITORIOS.TXT</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.DataRowsToSkip">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.Format">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Delimited</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.HeaderRowDelimiter">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property xml:space="preserve" SSIS:Name="Value">
+</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.HeaderRowsToSkip">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.LocaleID">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">10250</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.RowDelimiter">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.TextQualifier">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.Datos de Territorios.Unicode">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
@@ -344,10 +540,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F0A08359-9A2C-4831-BA0B-7A139675A18C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2D0C7E1B-D00E-4776-A535-71DD74DA6851}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
