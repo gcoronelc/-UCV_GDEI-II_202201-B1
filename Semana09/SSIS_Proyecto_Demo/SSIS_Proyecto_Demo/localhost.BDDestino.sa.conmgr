@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.BDDestino.sa"
+  DTS:DTSID="{5AE5BC25-609F-48B6-9980-E0720B20100C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=BDDestino;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm8KeguxCC0m/HnjD6Cvv2AAAAAACAAAAAAAQZgAAAAEAACAAAABSB+Pp0X+eBo2yEgNdlaswO0HpzYe2Sf61u13r4wYuZAAAAAAOgAAAAAIAACAAAAA/HNaN7OOwtRXLbUkdV/BVs0kmXAhqTB0k6TBGwFEHWHAAAAANBZxB3K/KYaSifs0UjFteoZHby+b4Tmn8+2G0v0hSD8JWowxGJgwQde5NfOFgqTaFKgn/mLVe5u8vr0N78FxIZsvkyiCC61ZlVVl28pb8Xmle10nzOTMqMx5pvZPfeyRfrh0btAjnbbDuUIzkkzcdQAAAAL4BfVgmgE9k34Rd12RUuPtZFDBjFSQ8XCwAICX/fQS10npjhXu89TyexBDcrYEtcBLEHD0bsKWnuJcxyOhRoEM=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
