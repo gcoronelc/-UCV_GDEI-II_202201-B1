@@ -6,5 +6,12 @@ namespace CadaServicios
 {
     public class EurekaService: GeneralService
     {
+
+
+        public void RegistrarDeposito()
+        {
+            this.
+        }
+
     }
 }
