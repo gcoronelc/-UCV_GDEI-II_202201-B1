@@ -16,7 +16,7 @@ namespace EurekaApp
         [STAThread]
         static void Main()
         {
-            
+            /*
             ClienteModel cliente = new ClienteModel();
             cliente.paterno = "ABC";
             cliente.materno = "XYZ";
@@ -31,14 +31,13 @@ namespace EurekaApp
 
             MessageBox.Show("Estado: " + ClienteService.Estado);
             MessageBox.Show("Codig: " + codigo);
-            
+            */
 
-            /*
+            
             EurekaService service = new EurekaService();
             service.RegistrarDeposito("001000023",500.0, "0004");
             MessageBox.Show(service.Mensaje);
-            */
-
+            
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
