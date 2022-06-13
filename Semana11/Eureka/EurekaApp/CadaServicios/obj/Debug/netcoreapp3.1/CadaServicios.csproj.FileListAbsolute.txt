@@ -1,0 +1,4 @@
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana11\Eureka\EurekaApp\CadaServicios\bin\Debug\netcoreapp3.1\CapaModelo.dll
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana11\Eureka\EurekaApp\CadaServicios\obj\Debug\netcoreapp3.1\CadaServicios.csprojAssemblyReference.cache
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana11\Eureka\EurekaApp\CadaServicios\obj\Debug\netcoreapp3.1\CadaServicios.AssemblyInfoInputs.cache
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana11\Eureka\EurekaApp\CadaServicios\obj\Debug\netcoreapp3.1\CadaServicios.AssemblyInfo.cs

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CadaServicios
 {
@@ -8,9 +10,31 @@ namespace CadaServicios
     {
 
 
-        public void RegistrarDeposito()
+        public void RegistrarDeposito(string cuenta, double Importe, string CodEmp)
         {
-            this.
+            using (SqlConnection con = new SqlConnection(CadenaConexion))
+            {
+                try
+                {
+                    // El procedimiento
+                    con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "dbo.usp_deposito";
+                    // Agregar los parámetros
+
+
+                }
+                catch ()
+                {
+
+
+                }
+            }
+
+
+
+
         }
 
     }
