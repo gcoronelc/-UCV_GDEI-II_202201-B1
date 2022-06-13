@@ -131,20 +131,6 @@
           }
         }
       },
-      "CadaServicios/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CapaModelo": "1.0.0",
-          "System.Data.SqlClient": "4.8.3"
-        },
-        "compile": {
-          "bin/placeholder/CadaServicios.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CadaServicios.dll": {}
-        }
-      },
       "CapaModelo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -153,6 +139,20 @@
         },
         "runtime": {
           "bin/placeholder/CapaModelo.dll": {}
+        }
+      },
+      "CapaServicios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CapaModelo": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/CapaServicios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaServicios.dll": {}
         }
       }
     }
@@ -471,21 +471,21 @@
         "version.txt"
       ]
     },
-    "CadaServicios/1.0.0": {
-      "type": "project",
-      "path": "../CadaServicios/CadaServicios.csproj",
-      "msbuildProject": "../CadaServicios/CadaServicios.csproj"
-    },
     "CapaModelo/1.0.0": {
       "type": "project",
       "path": "../CapaModelo/CapaModelo.csproj",
       "msbuildProject": "../CapaModelo/CapaModelo.csproj"
+    },
+    "CapaServicios/1.0.0": {
+      "type": "project",
+      "path": "../CapaServicios/CapaServicios.csproj",
+      "msbuildProject": "../CapaServicios/CapaServicios.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CadaServicios >= 1.0.0",
-      "CapaModelo >= 1.0.0"
+      "CapaModelo >= 1.0.0",
+      "CapaServicios >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -515,11 +515,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CadaServicios\\CadaServicios.csproj": {
-              "projectPath": "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CadaServicios\\CadaServicios.csproj"
-            },
             "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CapaModelo\\CapaModelo.csproj": {
               "projectPath": "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CapaModelo\\CapaModelo.csproj"
+            },
+            "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CapaServicios\\CapaServicios.csproj": {
+              "projectPath": "D:\\GITHUB\\UCV\\UCV_GDEI-II_202201-B1\\Semana11\\Eureka\\EurekaApp\\CapaServicios\\CapaServicios.csproj"
             }
           }
         }
