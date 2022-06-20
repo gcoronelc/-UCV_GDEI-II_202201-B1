@@ -45,12 +45,17 @@ namespace EurekaApp
          if(usuario!="" && clave != "")
          {
             LogonService service = new LogonService();
-            EmpleadoModel model = service.validarUsuario(usuario, clave);
+            EmpleadoModel empleado = service.validarUsuario(usuario, clave);
             if (service.Estado==1)
             {
                FormularioPrincipal principal = new FormularioPrincipal();
                principal.Show();
                this.Hide();
+               Cache.UserLoginCache.Codigo = empleado.Codigo;
+               Cache.UserLoginCache.Paterno = empleado.Paterno;
+               Cache.UserLoginCache.Materno = empleado.Materno;
+               Cache.UserLoginCache.Nombre = empleado.Nombre;
+               Cache.UserLoginCache.Usuario = empleado.Usuario;
             }
             else
             {

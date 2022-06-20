@@ -33,9 +33,6 @@ namespace CapaServicios
                     this.Estado = Convert.ToInt32(cmd.Parameters["@codigo"].Value);
                     this.Mensaje = cmd.Parameters["@mensaje"].Value.ToString();
                     cmd.Dispose();
-                    // Mensaje de estado
-                    this.Estado = 1;
-                    this.Mensaje = "Proceso ejecutado correctamente";
                 }
                 catch (Exception e)
                 {

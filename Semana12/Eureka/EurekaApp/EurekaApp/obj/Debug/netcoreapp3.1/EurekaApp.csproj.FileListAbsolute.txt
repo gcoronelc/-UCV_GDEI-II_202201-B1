@@ -78,3 +78,4 @@ D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana12\Eureka\EurekaApp\EurekaApp\bin\Debu
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana12\Eureka\EurekaApp\EurekaApp\bin\Debug\netcoreapp3.1\CapaServicios.pdb
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana12\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.csproj.CopyComplete
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana12\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.genruntimeconfig.cache
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana12\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.FormDeposito.resources

@@ -33,7 +33,6 @@
          this.txtClave = new System.Windows.Forms.TextBox();
          this.label2 = new System.Windows.Forms.Label();
          this.btnProcesar = new System.Windows.Forms.Button();
-         this.btnNuevo = new System.Windows.Forms.Button();
          this.btnCerrar = new System.Windows.Forms.Button();
          this.lblMensaje = new System.Windows.Forms.Label();
          this.SuspendLayout();
@@ -63,6 +62,7 @@
          this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
          this.txtClave.Location = new System.Drawing.Point(227, 103);
          this.txtClave.Name = "txtClave";
+         this.txtClave.PasswordChar = '*';
          this.txtClave.Size = new System.Drawing.Size(375, 35);
          this.txtClave.TabIndex = 3;
          this.txtClave.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -85,28 +85,18 @@
          this.btnProcesar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
          this.btnProcesar.Location = new System.Drawing.Point(70, 238);
          this.btnProcesar.Name = "btnProcesar";
-         this.btnProcesar.Size = new System.Drawing.Size(172, 80);
+         this.btnProcesar.Size = new System.Drawing.Size(268, 80);
          this.btnProcesar.TabIndex = 4;
          this.btnProcesar.Text = "Procesar";
          this.btnProcesar.UseVisualStyleBackColor = false;
          this.btnProcesar.Click += new System.EventHandler(this.button1_Click);
          // 
-         // btnNuevo
-         // 
-         this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-         this.btnNuevo.Location = new System.Drawing.Point(252, 238);
-         this.btnNuevo.Name = "btnNuevo";
-         this.btnNuevo.Size = new System.Drawing.Size(172, 80);
-         this.btnNuevo.TabIndex = 5;
-         this.btnNuevo.Text = "Nuevo";
-         this.btnNuevo.UseVisualStyleBackColor = true;
-         // 
          // btnCerrar
          // 
          this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-         this.btnCerrar.Location = new System.Drawing.Point(430, 238);
+         this.btnCerrar.Location = new System.Drawing.Point(344, 238);
          this.btnCerrar.Name = "btnCerrar";
-         this.btnCerrar.Size = new System.Drawing.Size(172, 80);
+         this.btnCerrar.Size = new System.Drawing.Size(258, 80);
          this.btnCerrar.TabIndex = 6;
          this.btnCerrar.Text = "Cerrar";
          this.btnCerrar.UseVisualStyleBackColor = true;
@@ -131,13 +121,13 @@
          this.ClientSize = new System.Drawing.Size(701, 379);
          this.Controls.Add(this.lblMensaje);
          this.Controls.Add(this.btnCerrar);
-         this.Controls.Add(this.btnNuevo);
          this.Controls.Add(this.btnProcesar);
          this.Controls.Add(this.txtClave);
          this.Controls.Add(this.label2);
          this.Controls.Add(this.txtUsuaio);
          this.Controls.Add(this.label1);
          this.Name = "FormLogin";
+         this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "INICIO DE SESIÓN";
          this.ResumeLayout(false);
          this.PerformLayout();
@@ -151,7 +141,6 @@
       private System.Windows.Forms.TextBox txtClave;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Button btnProcesar;
-      private System.Windows.Forms.Button btnNuevo;
       private System.Windows.Forms.Button btnCerrar;
       private System.Windows.Forms.Label lblMensaje;
    }
