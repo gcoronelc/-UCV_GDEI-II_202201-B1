@@ -1,15 +1,16 @@
 
+use EUREKABANK
+go
+
+
 /*
 ** Estado: 
 **   +1: Datos correctos 
 **   -1: Datos incorrectos
 **   -2: Error en el proceso
 */
-alter procedure dbo.usp_logon
-(
-	@p_usuario varchar(15), 
-	@p_clave varchar(15)
-)
+create procedure dbo.usp_logon
+( 	@p_usuario varchar(15), @p_clave varchar(15) )
 as
 begin
 	SET NOCOUNT ON;
