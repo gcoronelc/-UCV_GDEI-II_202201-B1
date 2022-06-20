@@ -101,5 +101,10 @@ namespace EurekaApp
             childForm.Close();
          }
       }
+
+      private void FormularioPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+      {
+         Application.Exit();
+      }
    }
 }
