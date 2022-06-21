@@ -1,0 +1,10 @@
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\bin\Debug\netcoreapp3.1\CapaModel.deps.json
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\bin\Debug\netcoreapp3.1\CapaModel.dll
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\bin\Debug\netcoreapp3.1\CapaModel.pdb
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.AssemblyInfoInputs.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.AssemblyInfo.cs
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.dll
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.pdb
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.csproj.AssemblyReference.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaModel\obj\Debug\netcoreapp3.1\CapaModel.GeneratedMSBuildEditorConfig.editorconfig

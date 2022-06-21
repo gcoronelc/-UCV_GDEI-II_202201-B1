@@ -1,0 +1,13 @@
+E:\VisualStudio\Proyectos\AppDemo\CapaService\bin\Debug\netcoreapp3.1\CapaModel.dll
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.AssemblyInfoInputs.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.AssemblyInfo.cs
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaService\bin\Debug\netcoreapp3.1\CapaService.deps.json
+E:\VisualStudio\Proyectos\AppDemo\CapaService\bin\Debug\netcoreapp3.1\CapaService.dll
+E:\VisualStudio\Proyectos\AppDemo\CapaService\bin\Debug\netcoreapp3.1\CapaService.pdb
+E:\VisualStudio\Proyectos\AppDemo\CapaService\bin\Debug\netcoreapp3.1\CapaModel.pdb
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.csproj.CopyComplete
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.dll
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.pdb
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.csproj.AssemblyReference.cache
+E:\VisualStudio\Proyectos\AppDemo\CapaService\obj\Debug\netcoreapp3.1\CapaService.GeneratedMSBuildEditorConfig.editorconfig
