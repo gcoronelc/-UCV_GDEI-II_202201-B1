@@ -45,6 +45,8 @@
          this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.depositoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.personasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
          this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,8 +74,7 @@
          this.statusStrip = new System.Windows.Forms.StatusStrip();
          this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
          this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-         this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-         this.personasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.movimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.menuStrip.SuspendLayout();
          this.toolStrip.SuspendLayout();
          this.statusStrip.SuspendLayout();
@@ -210,6 +211,22 @@
          this.depositoToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
          this.depositoToolStripMenuItem.Text = "Deposito";
          this.depositoToolStripMenuItem.Click += new System.EventHandler(this.depositoToolStripMenuItem_Click);
+         // 
+         // consultasToolStripMenuItem
+         // 
+         this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personasToolStripMenuItem,
+            this.movimientosToolStripMenuItem});
+         this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+         this.consultasToolStripMenuItem.Size = new System.Drawing.Size(81, 23);
+         this.consultasToolStripMenuItem.Text = "Consultas";
+         // 
+         // personasToolStripMenuItem
+         // 
+         this.personasToolStripMenuItem.Name = "personasToolStripMenuItem";
+         this.personasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+         this.personasToolStripMenuItem.Text = "Personas";
+         this.personasToolStripMenuItem.Click += new System.EventHandler(this.personasToolStripMenuItem_Click);
          // 
          // toolsMenu
          // 
@@ -426,20 +443,12 @@
          this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 19);
          this.toolStripStatusLabel.Text = "Status";
          // 
-         // consultasToolStripMenuItem
+         // movimientosToolStripMenuItem
          // 
-         this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personasToolStripMenuItem});
-         this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-         this.consultasToolStripMenuItem.Size = new System.Drawing.Size(81, 23);
-         this.consultasToolStripMenuItem.Text = "Consultas";
-         // 
-         // personasToolStripMenuItem
-         // 
-         this.personasToolStripMenuItem.Name = "personasToolStripMenuItem";
-         this.personasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-         this.personasToolStripMenuItem.Text = "Personas";
-         this.personasToolStripMenuItem.Click += new System.EventHandler(this.personasToolStripMenuItem_Click);
+         this.movimientosToolStripMenuItem.Name = "movimientosToolStripMenuItem";
+         this.movimientosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+         this.movimientosToolStripMenuItem.Text = "Movimientos";
+         this.movimientosToolStripMenuItem.Click += new System.EventHandler(this.movimientosToolStripMenuItem_Click);
          // 
          // FormularioPrincipal
          // 
@@ -513,6 +522,7 @@
       private System.Windows.Forms.ToolStripMenuItem depositoToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem personasToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem movimientosToolStripMenuItem;
    }
 }
 

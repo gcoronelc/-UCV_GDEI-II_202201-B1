@@ -109,3 +109,4 @@ D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana13\Eureka\EurekaApp\EurekaApp\obj\Debu
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana13\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.pdb
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana13\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.genruntimeconfig.cache
 D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana13\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.FormConsultaPersonas.resources
+D:\GITHUB\UCV\UCV_GDEI-II_202201-B1\Semana13\Eureka\EurekaApp\EurekaApp\obj\Debug\netcoreapp3.1\EurekaApp.FormConsultaMovimientos.resources

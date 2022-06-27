@@ -120,5 +120,12 @@ namespace EurekaApp
          view.MdiParent = this;
          view.Show();
       }
+
+      private void movimientosToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         FormConsultaMovimientos view = FormConsultaMovimientos.GetInstance();
+         view.MdiParent = this;
+         view.Show();
+      }
    }
 }
